@@ -47,16 +47,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
     />
-    <!-- animate.style -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
     <!-- aos -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <!-- click -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
     <!-- my css -->
     <link rel="stylesheet" href="./CSS/style.css" />
   </head>
@@ -119,17 +111,17 @@
           <div class="container">
             <div class="row">
               <div class="col-lg-7 title">
-                <h6>We are the Best</h6>
-                <h1>Freelace Prouct Designer Running</h1>
-                <p>
+                <h6 class="animated_h6 fadeInUp">We are the Best</h6>
+                <h1 class="animated_h1 fadeInUp">Freelace Prouct Designer Running</h1>
+                <p class="animated_p fadeInUp">
                   We develop the relationships that underpin the next phase in
                   your organistion's growth.
                 </p>
-                <ul class="list__header">
+                <ul class="list__header animated_ul fadeInUp">
                   <li><span>Master's degree in designing</span></li>
                   <li><span>Outstanding mobile design</span></li>
                 </ul>
-                <div class="button__hcontent">
+                <div class="button__hcontent animated_button fadeInUp">
                   <a href="#" class="button btn_clasic gradient button__content"
                     >GET STARTED</a
                   >
@@ -137,25 +129,9 @@
               </div>
               <div class="col-lg-5">
                 <div class="banner__menu">
-                  <img
-                    src="./images/pic3_1.png"
-                    class="fadeInUp"
-                    style="
-                      visibility: visible;
-                      animation-delay: 2s;
-                      animation-name: fadeInUp;
-                    "
-                  />
+                  <img src="./images/pic3_1.png" class="animated_img fadeInUp" style="visibility: visible;"/>
                   <div class="move__banner">
-                    <img
-                      src="./images/pic1.png"
-                      class="zoonIn"
-                      style="
-                        visibility: visible;
-                        animation-delay: 2.5s;
-                        animation-name: zoomIn;
-                      "
-                    />
+                    <img src="./images/pic1.png" class="animated_img_hover zoomIn" style="visibility: visible;" />
                   </div>
                 </div>
               </div>
@@ -227,12 +203,12 @@
     >
       <div class="container">
         <div class="row">
-          <div class="col-lg-6">
+          <div class="col-lg-6 animated_Left fadeInLeft">
             <div class="aboutUs__img">
               <img src="./images/pic1.jpg" alt="" />
             </div>
           </div>
-          <div class="col-lg-6 title">
+          <div class="col-lg-6 title animated_Right fadeInRight">
             <h6>About Us</h6>
             <h1>Build Your Business Website Better</h1>
             <p>
@@ -428,7 +404,7 @@
           <h6>Portfolio</h6>
           <h1>Our Latest Work</h1>
         </div>
-        <div class="row">
+        <div class="row" id="lightgallery1">
           <div class="col-lg-7 por__hover">
             <div class="por__img1 overlay">
               <img src="./images/pic1_2.jpg" />
@@ -450,8 +426,7 @@
           <div class="col-lg-5 por__hover">
             <div class="por__img1 overlay" id="lightgallery">
               <img src="./images/pic2_1.jpg" />
-              <span
-                ><a href="./images/pic2_1.jpg" data-lg-size="1600-2400"
+              <span id="lightgallery1"><a href="./images/pic2_1.jpg" data-lg-size="1600-2400"
                   ><i class="la la-plus"></i></a
               ></span>
             </div>
@@ -469,7 +444,7 @@
               <div class="col-lg-6 por__hover">
                 <div class="por__img1 overlay" id="lightgallery">
                   <img src="./images/pic3_1.jpg" />
-                  <span
+                  <span id="lightgallery1"
                     ><a href="./images/pic3_1.jpg" data-lg-size="1600-2400"
                       ><i class="la la-plus"></i></a
                   ></span>
@@ -522,7 +497,7 @@
           <div class="col-lg-5 por__hover">
             <div class="por__img1 overlay" id="lightgallery">
               <img src="./images/pic6.jpg" />
-              <span
+              <span id="lightgallery1"
                 ><a href="./images/pic6.jpg" data-lg-size="1600-2400"
                   ><i class="la la-plus"></i></a
               ></span>
@@ -750,7 +725,7 @@
           <h6>Our Blog</h6>
           <h1>Latest News & Blog</h1>
         </div>
-        <div class="owl-carousel owl-theme">
+        <div class="blog-carousel2 owl-carousel owl-theme">
           <div class="owl__item">
             <div class="owl__img">
               <a href="#">
@@ -852,57 +827,163 @@
     </section>
     <section class="act__logo">
       <div class="container">
-        <div class="logoitem">
-          <div>your content</div>
-          <div>your content</div>
-          <div>your content</div>
-        </div>
+        <div class="clients-carousel owl-none owl-carousel">
+					<div class="item">
+						<div class="clients-logo">
+							<img class="logo-main" src="./images/logo-pink1.png">
+							<img class="logo-hover" src="images/logo-light1.png">
+						</div>
+					</div>
+					<div class="item">
+						<div class="clients-logo">
+							<img class="logo-main" src="./images/logo-pink2.png">
+							<img class="logo-hover" src="./images/logo-light2.png">
+						</div>
+					</div>
+					<div class="item">
+						<div class="clients-logo">
+							<img class="logo-main" src="./images/logo-pink3.png">
+							<img class="logo-hover" src="./images/logo-light3.png">
+						</div>
+					</div>
+					<div class="item">
+						<div class="clients-logo">
+							<img class="logo-main" src="./images/logo-pink4.png">
+							<img class="logo-hover" src="./images/logo-light4.png">
+						</div>
+					</div>
+					<div class="item">
+						<div class="clients-logo">
+							<img class="logo-main" src="./images/logo-pink5.png">
+							<img class="logo-hover" src="./images/logo-light5.png">
+						</div>
+					</div>
+					<div class="item">
+						<div class="clients-logo">
+							<img class="logo-main" src="./images/logo-pink6.png">
+							<img class="logo-hover" src="./images/logo-light6.png">
+						</div>
+					</div>
+				</div>
       </div>
     </section>
     <footer>
-      <div class="container">
-        <div class="dlab-subscribe style-1 fade-up">
-          <div class="row">
-            <div class="col-lg-6">
-              <h2 class="title">Subscribe To Our Newsletter</h2>
-            </div>
-            <div class="col-lg-6">
-              <form
-                class="dzSubscribe"
-                action="script/mailchamp.php"
-                method="post"
-              >
-                <div class="dzSubscribeMsg"></div>
-                <div class="form-group">
-                  <div class="input-group shadow">
-                    <input
-                      name="dzEmail"
-                      required="required"
-                      type="email"
-                      class="form-control"
-                      placeholder="Your Email Address"
-                    />
-                    <div class="input-group-addon">
-                      <button
-                        name="submit"
-                        value="Submit"
-                        type="submit"
-                        class="btn btn-primary gradient"
-                      >
-                        <i class="las la-paper-plane scale4"></i>
-                      </button>
-                    </div>
-                  </div>
+        <footer class="site-footer style-2" id="footer" style="background-image: url(./images/bg4.png);">
+          <div class="container">
+            <div class="dlab-subscribe">
+              <div class="row align-items-center">
+                <div class="col-lg-6">
+                  <h2 class="title">Subscribe To Our Newsletter</h2>
                 </div>
-              </form>
+                <div class="col-lg-6">
+                  <form class="dzSubscribe" action="script/mailchamp.php" method="post">
+                    <div class="dzSubscribeMsg"></div>
+                    <div class="form-group">
+                      <div class="input-group shadow">
+                        <input name="dzEmail" required="required" type="email" class="form-control" placeholder="Your Email Address">
+                        <div class="input-group-addon">
+                          <button name="submit" value="Submit" type="submit" class="btn btn-primary gradient btn-email">
+                            <i class="las la-paper-plane scale4"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div data-aos="fade-up" data-aos-opacity="1">
-        <h1 class="a1">Hien sieu dep trai</h1>
-      </div>
+          <div class="footer-top">
+                  <div class="container">
+              <div class="row">
+                <div class="col-xl-3 col-lg-4 col-sm-6   fadeIn">
+                              <div class="widget widget_about">
+                    <div class="footer-logo">
+                      <a href="#"><img src="./images/logo-white.png" alt=""/></a> 
+                    </div>
+                    <div class="widget widget_getintuch">
+                      <ul>
+                        <li>
+                          <i class="fa fa-phone gradient"></i>
+                          <span>1800-123-4567<br/>+91 987-654-3210</span> 
+                        </li>
+                        <li>
+                          <i class="fa fa-envelope gradient"></i> 
+                          <span>
+                            <a href="#" class="__cf_email__" data-cfemail="e68f888089a6839e878b968a83c885898b">info@example.com</a>
+                            <br/> 
+                            <a href="#" class="__cf_email__" data-cfemail="3f4c5a4d49565c5a4c7f58525e5653115c5052">services@gmail.com</a>
+                        </li>
+                        <li>
+                          <i class="fas fa-map-marker-alt gradient"></i>
+                          <span>Demo Address #8901 Marmora Road Chi Minh City, Vietnam</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                          </div>
+                <div class="col-xl-3 col-lg-2 col-sm-6 fadeIn">
+                  <div class="widget widget_services">
+                    <h5 class="footer-title">Our links</h5>
+                    <ul>
+                      <li><a href="#">Home</a></li>
+                      <li><a href="#">About Us</a></li>
+                      <li><a href="#">Services</a></li>
+                      <li><a href="#">Team</a></li>
+                      <li><a href="#">Blog</a></li>
+                    </ul>
+                  </div>
+                          </div>
+                <div class="col-xl-3 col-lg-3 col-sm-6 fadeIn">
+                  <div class="widget widget_services">
+                    <h5 class="footer-title">Our Services</h5>
+                    <ul>
+                      <li><a href="#">Strategy & Research</a></li>
+                      <li><a href="#">Web Development</a></li>
+                      <li><a href="#">Web Solution</a></li>
+                      <li><a href="#">Digital Marketing</a></li>
+                      <li><a href="#">App Design </a></li>
+                    </ul>
+                  </div>
+                          </div>
+                <div class="col-xl-3 col-lg-3 col-sm-6 fadeIn">
+                  <div class="widget widget_services">
+                     <h5 class="footer-title">Other links</h5>
+                    <ul>
+                      <li><a href="#">FAQ</a></li>
+                      <li><a href="#">Portfolio</a></li>
+                      <li><a href="#">Privacy Policy</a></li>
+                      <li><a href="#">Terms & Conditions</a></li>
+                      <li><a href="#">Support </a></li>
+                    </ul>
+                  </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="footer-bottom">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 col-md-7 text-start"> 
+                <span class="copyright-text">Copyright © 2021 <a href="https://dexignzone.com/" target="_blank">DexignZone</a>. All rights reserved.</span> 
+              </div>
+              <div class="col-lg-6 col-md-5 text-end"> 
+                <div class="dlab-social-icon">
+                  <ul>
+                    <li><a class="fab fa-facebook-f" href="#"></a></li>
+                    <li><a class="fab fa-instagram" href="#"></a></li>
+                    <li><a class="fab fa-twitter" href="#"></a></li>
+                  </ul>
+                </div>
+              </div>
+                    </div>
+                </div>
+            </div>
     </footer>
+
+    <a href="" class="backtoTop cd-top text-replace js-cd-top">
+      <i class="fa fa-arrow-up"></i>
+    </a>
   </body>
 </html>
 
@@ -968,7 +1049,7 @@
 <!-- owl carousel -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 <script>
-  $(".owl-carousel").owlCarousel({
+  $(".blog-carousel2").owlCarousel({
     loop: true,
     margin: 30,
     autoplay: true,
@@ -985,7 +1066,7 @@
   });
 </script>
 <script>
-  $(".owl-logo").owlCarousel({
+  $(".clients-carousel").owlCarousel({
     loop: true,
     margin: 30,
     autoplay: true,
@@ -1006,13 +1087,6 @@
 <script>
   AOS.init();
 </script>
-<!-- click -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-<script>
-  $('.logoitem').slick({
-  slidesToShow: 5,
-  slidesToScroll: 1,
-  autoplay: true,
-  autoplaySpeed: 2000,
-});
-</script>
+<!-- backtoTop -->
+<script src="./js/util.js"></script>
+<script src="./js/main.js"></script>
